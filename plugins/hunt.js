@@ -67,7 +67,7 @@ if (player.hp < 0) {
 	let msg = `*${pname}* Anda Mati Di Bunuh Oleh ${monsterName}`
 	 if (player.level > 1) {
 	  player.level -= 1
-	  msg += `\nLevel Anda Turun 1 Karena Mati Saat Berburu` 
+	  msg += `\nLevel Anda Turun 1 Karena Terbunuh Saat Berbur` 
           }
 	  player.exp = 0
 	  player.hp = player.max_hp
