@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 
   let player = global.DATABASE._data.users[m.sender]
   let pick = (args[0] || '').toLowerCase()
-  switch (class) {
+  switch (pick) {
       case 'tank':
         player.class = tank
         player.attack = player.attack + 5
