@@ -4,8 +4,8 @@ let player = global.DATABASE.data.users[m.sender]
 if (player.potion < 1) throw 'Anda Tidak Memiliki Potion' 
 
 if (player.hp < 100) {
-    player.hp += 20
-    m.reply(`+20 HP, ${player.hp}/${player.max_hp}`)
+    player.hp = player.max_hp
+    m.reply(`Berhasil Menambhakan Healt Point, ${player.hp}/${player.max_hp}`)
 if (player.hp > 100)
     player.hp = player.max_hp
     player.potion -= 1
